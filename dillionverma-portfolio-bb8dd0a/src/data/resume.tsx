@@ -5,7 +5,7 @@ export const DATA = {
   name: "Filippo Leonardo Niculae",
   initials: "FLN",
   url: "https://www.linkedin.com/in/filippo-leonardo-niculae-25b470279/",
-  location: "Terni TR; ITALY",
+  location: "Terni TR - ITALY ",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
     " Full stack Junior Developer. I love building things",

@@ -29,17 +29,23 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
+              <BlurFadeText
+                className="text-l font-bold"
+                delay={BLUR_FADE_DELAY}
+                text={DATA.location  + '🇮🇹'}
+              />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                
                 <AvatarFallback>{DATA.initials} </AvatarFallback>
               </Avatar>
             </BlurFade>
           </div>
           <BlurFade delay={BLUR_FADE_DELAY}>
-          <p><strong>TEL :</strong> {DATA.contact.tel}</p>
-          <p><strong>EMAIL :</strong> {DATA.contact.email}</p>
+          <p className="text-l font-bold"><strong>TEL :</strong> {DATA.contact.tel}</p>
+          <p className="text-l font-bold"><strong>EMAIL :</strong> {DATA.contact.email}</p>
           </BlurFade>
         </div>
       </section>
