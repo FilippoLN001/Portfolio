@@ -33,10 +33,14 @@ export default function Page() {
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
+                <AvatarFallback>{DATA.initials} </AvatarFallback>
               </Avatar>
             </BlurFade>
           </div>
+          <BlurFade delay={BLUR_FADE_DELAY}>
+          <p><strong>TEL :</strong> {DATA.contact.tel}</p>
+          <p><strong>EMAIL :</strong> {DATA.contact.email}</p>
+          </BlurFade>
         </div>
       </section>
       <section id="about">
@@ -51,9 +55,9 @@ export default function Page() {
       </section>
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 5}>
+          {/* <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Work Experience</h2>
-          </BlurFade>
+          </BlurFade> */}
           {/* {DATA.work.map((work, id) => (
             <BlurFade
               key={work.company}
